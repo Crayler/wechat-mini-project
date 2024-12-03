@@ -1,0 +1,41 @@
+<view>
+    <view class="title">BOOK思议-云识别</view>
+    <view class="list">
+        <view class="hr"></view>
+        <navigator class="btn" url="/pages/basic/index" hover-class="navigator-hover">查询水卡是否属于武汉晴川学院</navigator>
+        <navigator class="btn" url="/pages/tracking/index" hover-class="navigator-hover">水卡云识别-水卡详细信息</navigator>
+    </view>
+    <view class="remark">
+        <!-- <view>官网：https://www.easyar.cn</view>
+        <view>识别图：文档 -> EasyAR CRS 图像识别 -> CRS 微信小程序AR</view> -->
+     </view>
+     <view class="hr"></view>
+     <view style="display: flex; flex-direction: row;">
+        <view class="order">相关消息</view>   
+    </view>
+    <view class="tab-h">
+        <view class="line"></view>
+        <view class="line"></view>
+        <view class="name">热水时间：</view>
+        <view class="line"></view>
+        <view class="tag">早上：6：30-7：30</view>
+        <view class="tag">中午：11：30-14：00</view>
+        <view class="tag">晚上：16：30-23：30</view>
+    </view>
+    <view class="tab-h1">
+        <view class="line"></view>
+        <view class="name">常用电话：</view>
+        <view class="line"></view>
+        <view class="tag">校医院：62460120</view>
+        <view class="tag">维修中心：62461000</view>
+        <view class="tag">一卡通中心：62461943</view>
+    </view>
+    <view class="tab-h2">
+        <view class="line"></view>
+        <view class="name">地址：</view>
+        <view class="line"></view>
+        <view class="tag">一卡通中心：食堂对面</view>
+        <view class="tag">充值中心：晴川小剧场</view>
+        <view class="tag">维修中心：食堂对面</view>
+    </view>
+</view>

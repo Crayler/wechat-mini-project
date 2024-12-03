@@ -1,0 +1,7 @@
+<camera device-position="back" flash="off" resolution="medium" frame-size="medium" bindinitdone="cameraInitDone" binderror="cameraError" style="width: 100%; height: {{height}}px;"></camera>
+<view class="loading" wx:if="{{isSearching}}">
+    <loading text="识别中..."></loading>
+</view>
+<view class="btn-group">
+    <button type="primary" class="btn" bindtap="scan">点击识别</button>
+</view>

@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/tracking/index",
+    "pages/basic/index",
+    "pages/me/me" ,
+    "pages/change/change",
+    "pages/login/login",
+    "pages/register/rejister"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#87CEEB",
+    "navigationBarTitleText": "水卡",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#87CEEB",
+    "backgroundColor": "#87CEEB",
+    "borderStyle": "black",
+    "color": "#999999",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/bar/home-1.png",
+        "selectedIconPath": "pages/images/bar/home-0.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "pages/images/bar/me-1.png",
+        "selectedIconPath": "pages/images/bar/me-0.png"
+      }
+    ]
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

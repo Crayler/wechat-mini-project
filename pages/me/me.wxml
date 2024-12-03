@@ -1,0 +1,95 @@
+
+<!--pages/me/me.wxml-->
+<view class="content">
+  <!-- 登录相关 -->
+  <view class="head">
+    <view class="headIcon">
+      <image src="/pages/images/icon/head.jpg" style="width:70px;height:70px;"></image>
+    </view>
+    <view class="login">
+      <text bind:tap="gotoLogin">{{name}}</text>
+    </view>
+    <view class="detail">
+      <text> > </text>
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <!-- 订单相关 -->
+  <view style="display: flex; flex-direction: row;">
+    <view class="order">我的水卡</view>
+  </view>
+  <view class="line"></view>
+  <view class="nav">
+    <view class="nav-item" bindtap="nav" id="0" data-status='1'>
+      <view>
+        <image src="/pages/images/icon/dfk.png" style="width:28px;height:25px;"></image>
+      </view>
+      <view>余额</view>
+    </view>
+    <view class="nav-item" bindtap='main_click' id="1" data-status='3'>
+      <view>
+        <image src="/pages/images/icon/dsh.png" style="width:28px;height:25px;"></image>
+      </view>
+      <view>充值</view>
+    </view>
+    <view class="nav-item"  id="2" data-status='4'>
+      <view>
+        <image src="/pages/images/icon/dpj.png" style="width:28px;height:25px;"></image>
+      </view>
+      <view bindtap="handleLoss">去挂失</view>
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <!-- 列表导航相关 -->
+  <view class="item">
+    <view class="order">我的消息</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="order">我的账单</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+
+
+  <view class="hr"></view>
+
+  <view class="item" bindtap="updatePwd">
+    <view class="order">修改密码</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item" bindtap="opinion">
+    <view class="order">意见反馈</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="item" bindtap="clearStore">
+    <view class="order">清除缓存</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <view class="hr"></view>
+
+  <view class="item">
+    <view class="order">知识拓展</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+  <view class="hr"></view>
+</view>

@@ -1,0 +1,41 @@
+<xr-scene ar-system="modes:Marker" id="xr-scene" bind:ready="handleReady" bind:ar-ready="handleARReady" bind:tick="handleTick">
+  <xr-assets bind:progress="handleAssetsProgress" bind:loaded="handleAssetsLoaded">
+    <xr-asset-material asset-id="simple" effect="simple" />
+    <xr-asset-material asset-id="text-simple" effect="simple" /> 
+
+  </xr-assets>  
+
+
+
+    <xr-node>
+        <xr-ar-tracker wx:if="{{markerImg != ''}}" mode="Marker" src="{{markerImg}}" id="arTracker" >
+          <xr-node rotation="0 180 0">
+            <!-- <xr-mesh node-id="text-wrap" position="0 0.1 0" rotation="180 180 180" scale="0.8 1 0.2" geometry="plane" material="simple"
+            uniforms="u_baseColorFactor: 0.2 0.6 0.4 0.95"
+            states="alphaMode: BLEND"></xr-mesh> -->
+            <xr-mesh node-id="text-wrap-sub" position="-0.15 0.3 -0.5" rotation="180 180 180" scale="1 1 0.4" geometry="plane" material="simple"
+            uniforms="u_baseColorFactor: 0.6 0.8 1 0.5"
+            states="alphaMode: BLEND"
+            ></xr-mesh>
+  
+    
+            <!-- 文本处于beta版本，功能不完备，仅支持使用独立材质的基础渲染，不能更新渲染（修复中） -->
+            <xr-text node-id="text-name" position="0.3 0.3 -0.35" scale="0.1 0.1 1" material="text-simple" rotation="270 180 0"
+            value="向婧"
+            ></xr-text>
+            <xr-text node-id="text-name" position="0.3 0.3 -0.45" scale="0.1 0.1 1" material="text-simple" rotation="270 180 0"
+            value="计算机学院"
+            ></xr-text>
+            <xr-text node-id="text-name" position="0.3 0.3 -0.55" scale="0.1 0.1 1" material="text-simple" rotation="270 180 0"
+            value="数据科学与大数据技术"
+            ></xr-text>
+           </xr-node>
+        </xr-ar-tracker>
+        <xr-camera id="camera" node-id="camera" position="0.8 2.2 -5" clear-color="0.925 0.925 0.925 1" background="ar" is-ar-camera></xr-camera>
+    </xr-node>
+    <xr-shadow id="shadow-root"></xr-shadow>
+    <xr-node node-id="lights">
+        <xr-light type="ambient" color="1 1 1" intensity="1" />
+        <xr-light type="directional" rotation="180 0 0" color="1 1 1" intensity="1" />
+    </xr-node>
+</xr-scene>

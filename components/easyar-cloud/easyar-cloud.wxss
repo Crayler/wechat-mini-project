@@ -1,0 +1,20 @@
+.btn-group {
+    position: absolute;
+    z-index: 999;
+    bottom: 10rpx;
+    width: 100%;
+    text-align: center;
+}
+
+
+.loading {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 40;
+}
